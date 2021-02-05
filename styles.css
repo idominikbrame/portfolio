@@ -19,17 +19,19 @@ header {
   padding: 20px;
   color: white;
   background-color: black;
-  height: 80px;
+  height: 40px;
   width: 50px;
   margin: 0vh 20vw;
 }
 
-header div {
-  position: relative;
+header div  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-header h1 {
-  position: absolute;
-  top: 50px;
+
+header div h1 {
+  font-weight: bolder;
 }
 nav {
   position: absolute;
@@ -55,6 +57,7 @@ img {
   width: auto;
   z-index: 3;
   filter: saturate(3.5);
+  opacity: .7;
 }
 
 .container .inner-border {
@@ -111,9 +114,53 @@ img {
 }
 
 .landing-section {
-  height: 70vh;
+  height: 90vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10vh;
+}
+.between-section {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 4em;
+}
+.about-section {
+  height: 100vh;
+  background-image: url("about.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10vh 20vw 0 20vw;
+}
+
+.about-overlay {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  opacity: .5;
+  z-index:-1;
+}
+
+.about-section h1{
+  z-index: 1000;
+  color: black;
+  font-size: 6em;
+  position: absolute;
+  top: 0vh; 
+}
+
+.about-section h2 {
+  font-size: 2em;
+  position: absolute;
+  top: 15vh;
 }
