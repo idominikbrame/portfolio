@@ -114,15 +114,16 @@ img {
 }
 
 .landing-section {
+  background: linear-gradient(rgb(255, 255, 255), rgb(240, 240, 240));
+  background-size: cover;
   height: 90vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10vh;
 }
 .between-section {
-  background-color: black;
+  background: linear-gradient(rgb(39, 39, 39), rgb(12, 12, 12));
   height: 100vh;
   display: flex;
   align-items: center;
@@ -140,7 +141,7 @@ img {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 10vh 20vw 0 20vw;
+  
 }
 
 .about-overlay {
@@ -156,11 +157,28 @@ img {
   color: black;
   font-size: 6em;
   position: absolute;
-  top: 0vh; 
+  top: 0vh;
+  margin: 10vh 20vw 0 20vw;
 }
 
 .about-section h2 {
   font-size: 2em;
   position: absolute;
   top: 15vh;
+  margin: 10vh 20vw 0 20vw;
+}
+
+.portfolio-section {
+  background: linear-gradient(rgb(226, 226, 226), whitesmoke);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;  
+}
+
+.portfolio-section h1 {
+  position: absolute;
+  top: 10vh;
+  font-size: 5em;
 }
