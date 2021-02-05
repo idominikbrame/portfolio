@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+body {
+  margin-top: 100px;
+  padding: 0;
+  position: relative;
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+}
+
+a:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+header {
+  font-size: 1.5em;
+  top: 20px; 
+  left: 20px;
+  padding: 20px;
+  color: white;
+  background-color: black;
+  height: 80px;
+  width: 50px;
+  margin: 0vh 20vw;
+}
+
+header div {
+  position: relative;
+}
+header h1 {
+  position: absolute;
+  top: 50px;
+}
+nav {
+  position: absolute;
+  right: 20vw;
+  color: black;
+}
+
+nav a {
+  margin-left: 100px;
+  font-size: 1em;
+}
+.container {
+  height: 600px;
+  width: auto;
+  background: white;
+  position: relative;
+  margin-right: 100px;
+  box-shadow: 100px 100px 1px black;
+}
+
+img {
+  height: 100%;
+  width: auto;
+  z-index: 3;
+  filter: saturate(3.5);
+}
+
+.container .inner-border {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  top: 16px;
+  right: 35px;
+  border: 15px solid white;
+  z-index: 10;
+}
+
+.opacity-overlay {
+  height: 90px;
+  width: 500px;
+  content: "";
+  background-color: black;
+  opacity: .5;
+  top: 350px;
+  left: 300px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 4;
+  filter: blur(2px);
+}
+.opacity-overlay2 {
+  height: 100px;
+  width: 500px;
+  content: "";
+  background-color: rgb(10, 10, 54);
+  opacity: .5;
+  top: 150px;
+  left: 100px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 4;
+  filter: blur(2px);
+}
+.opacity-overlay3 {
+  height: 100px;
+  width: 500px;
+  content: "";
+  background-color: rgb(51, 0, 0);
+  opacity: .5;
+  top: 250px;
+  left: 200px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 4;
+  filter: blur(2px);
+}
+
+.landing-section {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
