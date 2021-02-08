@@ -28,6 +28,10 @@ a:hover::before{
   width: 100%;
 }
 
+main div {
+  z-index: 4;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -84,14 +88,14 @@ header h1 span {
 }
 
 .video-container #landing-video {
-  width: 90vw;
+  width: 85vw;
   transition: all 1.5s ease;
   opacity: 0;
   border: 1px solid rgba(6, 21, 70, 0.63);
 }
 
 .video-container h1 {
-  z-index: 1000;
+  z-index: 3;
   color: white;
   position: absolute;
   font-size: 20em;
@@ -105,8 +109,8 @@ header h1 span {
 }
 .black-circle {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   background-color: rgba(0, 0, 0, 0.904);
   border-radius: 50%;
   top: 30px;
@@ -115,22 +119,22 @@ header h1 span {
 
 .blue-circle {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   background-color: rgb(11, 28, 54);
   border-radius: 50%;
-  top: 140px;
+  top: 200px;
   right: 230px;
 }
 
 .white-circle {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   background-color: rgb(224, 224, 224,0.904);
   border-radius: 50%;
-  top: 160px;
-  right: 90px;
+  top: 190px;
+  right: 50px;
   text-decoration: overline;
 }
 aside {
