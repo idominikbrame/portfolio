@@ -1,16 +1,16 @@
-window.addEventListener('scroll', function(e) {
-
-  const target = document.querySelector('.scroll');
-  const target2 = document.querySelector('.scroll2');
-  const target3 = document.querySelector('.scroll3');
-  const target4 = document.querySelector('.scroll4');
-  console.log(window.pageYOffset)
-
-  let scrolled = window.pageYOffset;
-  let rate = scrolled * .5;
-  let ballRate = scrolled;
-  target.style.transform = 'translate3d(0px, '+rate*-3.5+'px, 0px)';
-  target2.style.transform = 'translate3d(0px, '+rate*-1.2+'px, 0px)';
-  target3.style.transform = 'translate3d(0px, '+rate*2.8+'px, 0px)';
-  target4.style.transform = 'translate3d(0px, '+rate*5.8+'px, 0px)';
+window.addEventListener('load', function(e) {
+  setTimeout(videoOpacity, 700)
+  setTimeout(showNav, 1000)
 })
+
+const showNav = () => {
+  document.querySelector('.aside').style.opacity = "1";
+  document.querySelector('header').style.opacity = "1";
+}
+
+
+const videoOpacity = () => {
+  let landingVideo = document.querySelector('#landing-video').style
+  landingVideo.opacity = "1";
+  landingVideo.transform = "scale(.95)"
+}

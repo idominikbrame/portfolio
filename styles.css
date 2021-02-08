@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 16px;
+  background-color: whitesmoke;
+  cursor: url("Flecha.ani"), auto;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+}
+
+a::before {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 700ms;
+}
+
+a:hover::before{
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  transition: all 2s ease-in-out;
+  opacity: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 3em;
+  color: rgb(34, 34, 34);
+  margin-left: 7vw;
+}
+
+header h1 span {
+  text-decoration: overline;
+  font-size: .6em;
+}
+
+.navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10vw;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(36, 36, 36);
+  font-size: 1.2em;
+  margin-right: 100px;
+}
+
+.navbar a span {
+  font-size: .7em;
+  margin-right: 6px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  z-index:1;
+  margin-top: 10vh;
+  position: relative;
+}
+
+.video-container #landing-video {
+  width: 90vw;
+  transition: all 1.5s ease;
+  opacity: 0;
+  border: 1px solid rgba(6, 21, 70, 0.63);
+}
+
+.video-container h1 {
+  z-index: 1000;
+  color: white;
+  position: absolute;
+  top: 400px;
+  font-size: 20em;
+  background-color: rgba(185, 185, 185, 0.37);
+  padding: 8px 64px;
+}
+
+.video-container h1 span {
+  font-size: .6em;
+  text-decoration: overline;
+}
+.black-circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.904);
+  border-radius: 50%;
+  top: 30px;
+  right: 150px;
+}
+
+.blue-circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(11, 28, 54);
+  border-radius: 50%;
+  top: 140px;
+  right: 230px;
+}
+
+.white-circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(224, 224, 224,0.904);
+  border-radius: 50%;
+  top: 160px;
+  right: 90px;
+  text-decoration: overline;
+}
+aside {
+  position: absolute;
+  top: 300px;
+  left: 40px;
+}
+.aside {
+  width:800px;    
+  height:5vh;
+  position:fixed;
+  -webkit-transform-origin: left top;
+  -webkit-transform:rotate(-90deg) translateX(-100%);
+  transition: all 2s ease-in-out;
+  opacity: 0;
+}
+.side-nav li {    
+  margin-right:60px;
+  float:right;
+  line-height:25px;
+
+}
+
+.portfolio-section {
+  height: 100vh;
+}
