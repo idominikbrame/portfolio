@@ -4,7 +4,7 @@ body {
   font-family: 'Abril Fatface', cursive;
   font-size: 16px;
   background-color: whitesmoke;
-  cursor: url("Flecha.ani"), auto;
+  box-sizing: border-box;
 }
 
 li {
@@ -41,8 +41,7 @@ main div {
   width: 100vw;
   position: fixed;
   top: 0;
-  transition: all 2s ease-in-out;
-  opacity: 0;
+  opacity: 1;
   z-index: 1000;
 }
 
@@ -81,16 +80,15 @@ header h1 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   z-index:1;
   margin-top: 10vh;
   position: relative;
+
 }
 
 .video-container #landing-video {
   width: 85vw;
-  transition: all 1.5s ease;
-  opacity: 0;
   border: 1px solid rgba(6, 21, 70, 0.63);
 }
 
@@ -148,8 +146,6 @@ aside {
   position:fixed;
   -webkit-transform-origin: left top;
   -webkit-transform:rotate(-90deg) translateX(-100%);
-  transition: all 2s ease-in-out;
-  opacity: 0;
 }
 .side-nav li {    
   margin-right:60px;
@@ -159,5 +155,97 @@ aside {
 }
 
 .portfolio-section {
+  margin-top: 10%;
+  display: flex;
+  box-sizing: border-box;
+  width:92%;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+
+}
+
+
+.portfolio-section .project {
+  height: 90px;
+  padding: 50px 0px;
+  font-size: 140px;
+  color: rgba(36, 36, 36, 0.925);
+  flex-direction: column;
+  display: flex;
+  text-align: right;
+  justify-content: center;
+}
+
+.portfolio-section .project:hover {
+  cursor: url("cursor.cur"), auto;
+  background-color: rgba(128, 128, 128, 0.041);
+} 
+
+.portfolio-section div span {
+  font-size: .2em;
+  margin-left: 20px;
+}
+
+
+
+section {
   height: 100vh;
 }
+
+.gallery1-item {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.gallery2-item {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 300px;
+  right: 0;
+  opacity: 0;
+}
+
+
+.gallery3-item {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 600px;
+  right: 0;
+  opacity: 0;
+}
+
+
+
+
+.project {
+  margin-bottom: 100px;
+}
+
+.gallery video, img{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.gallery video{
+  height: 200px;
+  width: 300px;
+  box-shadow: 1px 5px 5px rgb(109, 109, 109);
+  margin-right: 20px;
+}
+.gallery img{
+  height: 150px;
+  width: 250px;
+  box-shadow: 10px 10px 10px rgb(158, 158, 158);
+  margin-right: 20px;
+}
+
+
+
