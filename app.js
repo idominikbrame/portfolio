@@ -8,93 +8,31 @@ gsap.from('.video-container #landing-video', {duration: 1.5, opacity: 0, transfo
 
 //register scroll plugin
 
-gsap.from(".box", {
-  x: -100,
+gsap.from(".barber", {
+  x: -2000,
   duration: 1,
-  rotation:15,
   scrollTrigger: {
-    trigger: ".box",
-    start: "top 60%",
+    trigger: ".barber",
+    start: "top 70%",
     markers: true,
   }
 })
 
-gsap.from(".box2", {
-  x: -100,
+gsap.from(".ttt", {
+  x: -2000,
   duration: 1,
-  rotation:15,
   scrollTrigger: {
-    trigger: ".box2",
-    start: "top 60%",
+    trigger: ".ttt",
+    start: "top 70%",
     markers: true,
   }
 })
-
-gsap.from(".box3", {
-  x: -100,
+gsap.from(".timer", {
+  x: -2000,
   duration: 1,
-  rotation:15,
   scrollTrigger: {
-    trigger: ".box3",
-    start: "top 60%",
+    trigger: ".timer",
+    start: "top 70%",
     markers: true,
   }
-})
-
-gsap.from(".box4", {
-  x: -100,
-  duration: 1.5,
-  rotation:25,
-  scrollTrigger: {
-    trigger: ".box4",
-    start: "top 60%",
-    markers: true,
-  }
-})
-
-
-
-
-document.querySelector(".gallery1").addEventListener("mouseover", e  => {
-      gsap.to(".gallery1", {
-        x:-900,
-        duration: 1.5,
-      })
-      gsap.to(".gallery1-item", {
-        delay: 1,
-        x: 50,
-        duration: 2,
-        opacity: 1
-      })
-  })
-
-
-  
-document.querySelector(".gallery2").addEventListener("mouseover", e  => {
-  gsap.to(".gallery2", {
-    x:-900,
-    duration: 1.5,
-  })
-  gsap.to(".gallery2-item", {
-    delay: 1,
-    x: 50,
-    duration: 2,
-    opacity: 1
-  })
-})
-
-
-
-
-document.querySelector(".gallery3").addEventListener("mouseover", e  => {
-  gsap.to(".gallery3", {
-    x:-900,
-    duration: 1.5,
-  })
-  gsap.to(".gallery3-item", {
-    delay: 1,
-    x: 50,
-    duration: 2,
-    opacity: 1
-  })
 })

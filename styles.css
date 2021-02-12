@@ -15,6 +15,11 @@ a {
   color: rgb(34, 34, 34);
 }
 
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
 a::before {
   content: '';
   width: 0px;
@@ -57,18 +62,18 @@ header h1 span {
 }
 
 .navbar {
-  width: 100vw;
+  width: 100%;
   display: flex;
+  text-align: right;
   justify-content: center;
   align-items: center;
-  margin-right: 10vw;
 }
 
 .navbar a {
   text-decoration: none;
   color: rgb(36, 36, 36);
-  font-size: 1.2em;
-  margin-right: 100px;
+  font-size: 1vw;
+  margin-right: 10vw;
 }
 
 .navbar a span {
@@ -96,156 +101,130 @@ header h1 span {
   z-index: 3;
   color: white;
   position: absolute;
-  font-size: 20em;
+  font-size: 10vw;
   background-color: rgba(250, 250, 250, 0.288);
-  padding: 0px 128px;
+  padding: 0px 5vw;
 }
 
 .video-container h1 span {
   font-size: .6em;
   text-decoration: overline;
 }
-.black-circle {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  background-color: rgba(0, 0, 0, 0.904);
-  border-radius: 50%;
-  top: 30px;
-  right: 150px;
-}
 
-.blue-circle {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  background-color: rgb(11, 28, 54);
-  border-radius: 50%;
-  top: 200px;
-  right: 230px;
-}
-
-.white-circle {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  background-color: rgb(224, 224, 224,0.904);
-  border-radius: 50%;
-  top: 190px;
-  right: 50px;
-  text-decoration: overline;
-}
 aside {
   position: absolute;
-  top: 300px;
-  left: 40px;
+  top: 10vh;
+  left: 10px;
 }
 .aside {
   width:800px;    
   height:5vh;
+  font-size: 1.5vw;
   position:fixed;
   -webkit-transform-origin: left top;
   -webkit-transform:rotate(-90deg) translateX(-100%);
 }
 .side-nav li {    
-  margin-right:60px;
+  margin-right:40px;
   float:right;
-  line-height:25px;
+
 
 }
 
 .portfolio-section {
-  margin-top: 10%;
-  display: flex;
-  box-sizing: border-box;
-  width:92%;
-  height: 100vh;
-  flex-direction: column;
-  position: relative;
-
+ display: flex;
+ flex-wrap: wrap;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
 }
 
+.portfolio-section div {
+  display: flex;
+  flex-direction: row;
+  gap: 0px 30px;
+  align-items: center;
+  justify-content: space-around;
+}
 
-.portfolio-section .project {
-  height: 90px;
-  padding: 50px 0px;
-  font-size: 140px;
-  color: rgba(36, 36, 36, 0.925);
-  flex-direction: column;
+.portfolio-section h1 {
+  font-size: 3vw;
+}
+
+.portfolio-section video, .portfolio-section img {
+  height: 11vw;
+  min-width: 50px;
+}
+
+.present-container {
   display: flex;
   text-align: right;
-  justify-content: center;
 }
 
-.portfolio-section .project:hover {
-  cursor: url("cursor.cur"), auto;
-  background-color: rgba(128, 128, 128, 0.041);
-} 
+@media (max-width: 1100px) {
+  aside {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+  }
 
-.portfolio-section div span {
-  font-size: .2em;
-  margin-left: 20px;
+  .portfolio-section {
+    height: 100%;
+    margin-top: 20vw;
+  }
+
+  .portfolio-section div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3vh;
+  }
+
+  .portfolio-section video, .portfolio-section img {
+    height: auto;
+    width: 80vw;
+  }
 }
 
-
-
-section {
-  height: 100vh;
-}
-
-.gallery1-item {
+.about{
+  height: 50vh;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30vh;
 }
 
-.gallery2-item {
+.about h1 {
+  font-size: 80px;
+}
+
+.about h3 {
+  font-size: 30px;
+  margin: 10px 15vw;
+}
+
+.contact {
+  height: 50vh;
   display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 300px;
-  right: 0;
-  opacity: 0;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 40px;
+  width: 60%;
 }
 
-
-.gallery3-item {
+.form-item {
   display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 600px;
-  right: 0;
-  opacity: 0;
-}
-
-
-
-
-.project {
-  margin-bottom: 100px;
-}
-
-.gallery video, img{
-  display: flex;
-  justify-content: center;
-  align-self: center;
-}
-
-.gallery video{
-  height: 200px;
+  flex-direction: column;
   width: 300px;
-  box-shadow: 1px 5px 5px rgb(109, 109, 109);
-  margin-right: 20px;
-}
-.gallery img{
-  height: 150px;
-  width: 250px;
-  box-shadow: 10px 10px 10px rgb(158, 158, 158);
-  margin-right: 20px;
+  padding-left: 10vw;
 }
 
-
-
+.form-textarea {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10vw;
+}
