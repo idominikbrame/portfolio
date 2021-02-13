@@ -14,8 +14,8 @@
   <header class="header">
     <h1 draggable="true">DB<span>X</span></h1>
     <nav class="navbar">
-      <a class="nav-item" href="#"><span>1</span>PORTFOLIO</a>
-      <a class="nav-item" href="#"><span>2</span>ABOUT</a>
+      <a class="nav-item" href="index.html#portfolio"><span>1</span>PORTFOLIO</a>
+      <a class="nav-item" href="index.html#about"><span>2</span>ABOUT</a>
       <a class="nav-item" href="resume.html"><span>3</span>RESUME</a>
     </nav>
   </header>
@@ -25,7 +25,7 @@
       <h1>DB<span>X</span></h1>
     </div>
     <div>
-    <section class="section-container">
+    <section class="section-container" id="portfolio">
       <div>
         <div>
           <article>
@@ -62,11 +62,32 @@
         <div class="timer-image"></div>  
       </div>     
     </section>    
-      <section class="about">
-        <h1>Lets make change...</h1>
-        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, pariatur minus hic sapiente non sit dolorum tempore saepe beatae impedit sunt nisi eveniet soluta vitae libero consequatur! Consectetur, esse libero.</h2>
-        <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloremque veniam dicta non temporibus inventore praesentium, tempora quod distinctio doloribus nisi earum dignissimos ipsum, assumenda rem, fugiat consequuntur adipisci incidunt.</h2>
+      <section class="about" id="about">
+        <div class="avatar"></div>
+        <div class="about-description"> 
+        <h1>WEB DESIGN. UI DESIGN. ACCESSABILITY. UX DESIGN. GSAP.</h1>
+        <h2>-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, pariatur minus hic sapiente non sit dolorum tempore saepe beatae impedit sunt nisi eveniet soluta vitae libero consequatur! Consectetur, esse libero.</h2>
+        <h2> -Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloremque veniam dicta non temporibus inventore praesentium, tempora quod distinctio doloribus nisi earum dignissimos ipsum, assumenda rem, fugiat consequuntur adipisci incidunt.</h2>
+        </div>
       </section>
+      <form>
+        <div class="input-section">
+         <label for="name">Name <span>*</span></label> <br>
+         <input type="text" id="name" placeholder="John Doe">
+        </div>
+        <div class="input-section">
+         <label for="email">E-mail <span>*</span></label> <br>
+         <input type="text" id="email" placeholder="JohnDoe@email.com">
+        </div>
+        <div class="input-section">
+         <label for="name">Company Name <span>*</span></label> <br>
+         <input type="text" id="name" placeholder="Company">
+        </div>
+        <div class="textarea">
+        <textarea placeholder="Message" rows="8" cols="30"></textarea><br>  
+        </div>     
+        <button type="submit">Send</button>
+      </form>
 
   </main>
 </body>
