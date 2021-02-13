@@ -8,31 +8,16 @@ gsap.from('.video-container #landing-video', {duration: 1.5, opacity: 0, transfo
 
 //register scroll plugin
 
-gsap.from(".barber", {
-  x: -2000,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".barber",
-    start: "top 70%",
-    markers: true,
-  }
+document.querySelectorAll('.section-container').forEach(item, {
+  gsap.from(item, {
+    x: -2000,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".barber",
+      start: "top 70%",
+      markers: true,
+    }
+  })
+  
 })
 
-gsap.from(".ttt", {
-  x: -2000,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".ttt",
-    start: "top 70%",
-    markers: true,
-  }
-})
-gsap.from(".timer", {
-  x: -2000,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".timer",
-    start: "top 70%",
-    markers: true,
-  }
-})
